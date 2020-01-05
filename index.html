@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Api</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>API Météo & News</h1>
+      <section class="input">
+        <input type="text" />
+        <button onclick="getInput()">Search</button>
+      </section>
+
+      <section class="container">
+        <section class="actualite"></section>
+
+        <section class="meteo">
+          <div class="information">
+            <h2 id="location">Paris</h2>
+            <h2>Condition: <span id="condition">Thunder</span></h2>
+            <img src="" alt="" />
+            <h2 id="horaire">12:30</h2>
+            <h2><span id="temperature">17C</span></h2>
+            <h2>Humidity: <span id="humidity">60%</span></h2>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
